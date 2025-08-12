@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 
 
@@ -6,6 +7,10 @@ class Account
 {
     private string name = "Essam";
 
+    //why we use Set 
+        //    • a negative body temperature
+        //    • a day in March outside the range 1 through 31
+        //    • a product code not in the company’s product catalog, etc.
     public void SetName (string accountName)
     {
         name = accountName;
