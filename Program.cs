@@ -8,7 +8,7 @@ class Account
     public string Name { get; private set; }
     public decimal balance { get; private set; }
 
-
+    //no return type for constracture 
     public Account() { }
 
     public Account (string accountName, decimal initialBalance)
@@ -72,11 +72,12 @@ class AccountTest
         //Account Account1 = new Account("1st Account");
 
         Account AccountWithBalance = new Account("Essam", 10000);
-
+        Account AccountWithout = new Account();
+        Account AccountTest = new Account("Radwa",-90);
 
 
         Console.WriteLine($"{AccountWithBalance.Name}'s balnce: {AccountWithBalance.balance:C}");
-
+        Console.WriteLine($"{AccountTest.Name}'s balnce: {AccountTest.balance:C}");
 
         Console.Write("\nEnter deposit amount for account1: ");
 
